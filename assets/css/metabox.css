@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.form-table.av_metabox .image_inner {
+    max-width: 270px;
+    min-width: 270px;
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+.form-table.av_metabox .image_inner img {
+    width: 100%;
+}
+
+.form-table.av_metabox .image_inner .to_trash {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 40px;
+    cursor: pointer;
+}

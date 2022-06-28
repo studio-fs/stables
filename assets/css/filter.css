@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+    .hidden {
+        display: none !important;
+    }
+    .fs-filter_body .av-filter_button {
+        border: 1px solid #d5d5d5;
+        color: #484848;
+        padding: 6px 10px;
+        min-width: 62px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+    }
+    .fs-filter_body .av-filter_button:not(:first-of-type) {
+        margin-left: 5px;
+    }
+    .fs-filter_body .av-filter_button:hover {
+        border: 1px solid #4a4b4b;
+        background: #eaeaea;
+        transition: all .25s ease-in-out;
+    }
+    .fs-filter_body .av-filter_button.active {
+        border: 1px solid #4a4b4b;
+        background: #cfcfcf;
+        color: #353535;
+        font-weight: bold;
+    }
+    .fs-filter_body .av-filter_button_s {
+        padding: 5px 10px;
+        min-width: 62px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+    }
+    .fs-filter_body .av-filter_button_s:hover {
+        transition: all .25s ease-in-out;
+    }
+    .fs-filter_body .av-filter_button_s.reset {
+        color: #0468ff;
+        font-weight: bold;
+        border: none;
+    }
+    .fs-filter_body .av-filter_button_s.search,
+    .fs-filter_body .av-filter_button_s.reset:hover {
+        font-weight: bold;
+        border: none;
+        color: #fff;
+        background: #0468ff;
+    }
+    .fs-filter_body .av-filter_button_s.search:hover {
+        color: #fff;
+        font-weight: bold;
+        border: none;
+    }
+    .fs-filter_body .av-filter_button_s.show_more {
+        border: 1px solid #d5d5d5;
+        color: #484848;
+        padding: 6px 10px;
+        min-width: 62px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        transition: all .25s ease-in-out;
+        display: none;
+    }
+    .fs-filter_body .av-filter_button_s.show_more:hover {
+        border: 1px solid #4a4b4b;
+        background: #eaeaea;
+        transition: all .25s ease-in-out;
+    }
+    .fs-filter_body .av-filter_button_s.show_more:after {
+        content: '';
+        background: #ff1f34;
+        border-radius: 10em;
+        width: 10px;
+        height: 10px;
+        top: -5px;
+        right: -5px;
+        position: absolute;
+    }
+    .fs-filter_body input[type="text"],
+    .fs-filter_body input[type="email"],
+    .fs-filter_body input[type="url"],
+    .fs-filter_body input[type="password"],
+    .fs-filter_body input[type="search"] {
+        margin: 0;
+        width: 65px;
+        padding: 6px 10px 5px;
+        border: 1px solid #ced1d7;
+    }
+    .fs-filter_body input[type="text"]:nth-child(odd),
+    .fs-filter_body input[type="email"]:nth-child(odd),
+    .fs-filter_body input[type="url"]:nth-child(odd),
+    .fs-filter_body input[type="password"]:nth-child(odd),
+    .fs-filter_body input[type="search"]:nth-child(odd) {
+        border-radius: 5px 0px 0px 5px;
+    }
+    .fs-filter_body input[type="text"]:nth-child(even),
+    .fs-filter_body input[type="email"]:nth-child(even),
+    .fs-filter_body input[type="url"]:nth-child(even),
+    .fs-filter_body input[type="password"]:nth-child(even),
+    .fs-filter_body input[type="search"]:nth-child(even) {
+        border-radius: 0px 5px 5px 0px;
+        margin-left: -5px;
+    }
+
+
+.fs-filter_body::-webkit-input-placeholder,
+.fs-filter_body:-moz-placeholder,
+.fs-filter_body::-moz-placeholder,
+.fs-filter_body:-ms-input-placeholder {
+    color: #a4aab6;
+}
+
+/*Маленький фильтр*/
+.fs-filter_body.small .grid {
+    grid-template-columns: .7fr 3.3fr;
+}
+
+.fs-filter_body.small p[data-name="Виды спорта"] span:nth-child(6),
+.fs-filter_body.small p[data-name="Виды спорта"] span:nth-child(7),
+.fs-filter_body.small p[data-name="Виды спорта"] span:nth-child(8),
+.fs-filter_body.small p[data-name="Виды спорта"] span:nth-child(9),
+.fs-filter_body.small p[data-name="Виды спорта"] span:nth-child(10),
+.fs-filter_body.small p[data-name="Виды спорта"] span:nth-child(11),
+.fs-filter_body.small .av-filter_button_s.search {
+    display: none;
+}
+
+.fs-filter_body.small p[data-name="Цена за занятие р/мес"] .hidden {
+    display: inline-block !important;
+    margin-top: 5px;
+    text-align: right;
+    float: right;
+}
+
+.fs-filter_body.small .grid:nth-child(3),
+.fs-filter_body.small .grid:nth-child(4),
+.fs-filter_body.small .grid:nth-child(5),
+.fs-filter_body.small .grid:nth-child(6),
+.fs-filter_body.small .grid:nth-child(7),
+.fs-filter_body.small .grid:nth-child(8),
+.fs-filter_body.small .grid:nth-child(9),
+.fs-filter_body.small .grid:nth-child(10),
+.fs-filter_body.small .grid:nth-child(11),
+.fs-filter_body.small .grid:nth-child(12),
+.fs-filter_body.small .grid:nth-child(13),
+.fs-filter_body.small .grid:nth-child(14),
+.fs-filter_body.small .grid:nth-child(15),
+.fs-filter_body.small .grid:nth-child(16),
+.fs-filter_body.small .grid:nth-child(17),
+.fs-filter_body.small .grid:nth-child(18),
+.fs-filter_body.small .grid:nth-child(19) {
+    display: none;
+}
+
+.fs-filter_body.small .hidden {
+    display: block !important;
+}
+
+.fs-filter_body.small .grid:nth-child(11) >span.hidden {
+    display: inline-block !important;
+}
+.fs-filter_body.small .av-filter_button_s.show_more {
+    display: inline-block;
+    color: #07173e;
+    font-weight: bold;
+}
+
+
+/*
+* new
+*/
+
+.fs-filter_body .grid {
+    display: grid;
+    grid-column-gap: 35px;
+    align-items: start;
+    grid-template-columns: 1.5fr 2.5fr;
+}
+
+.fs-filter_body.small .special_small {
+    display: grid;
+    grid-column-gap: 5px;
+    align-items: start;
+    grid-template-columns: 2fr 1.7fr;
+}
+.fs-filter_body.small .grid.grid-last {
+    display: none;
+}
+.fs-filter_body .grid.grid-last {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .fs-filter_body.small .grid {
+        grid-column-gap: 5px;
+        grid-template-columns: 1.5fr 3fr;
+    }
+    .fs-filter_body .av-filter_button:not(:first-of-type) {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .fs-filter_body.small .special_small {
+        display: block;
+    }
+    .fs-filter_body.small p[data-name="Цена за занятие р/мес"] .hidden {
+        float: none;
+    }
+    .fs-filter_body.small .hidden,
+    .fs-filter_body.small p[data-name="Цена за занятие р/мес"] .hidden {
+        display: none !important;
+    }
+    .fs-filter_body.small .grid:nth-child(11) {
+        display: grid;
+    }
+    .fs-filter_body .grid.grid-last {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    }
+    .fs-filter_body .av-filter_button_s.reset {
+        display: none;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .fs-filter_body .av-filter_button:not(:first-of-type) {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
